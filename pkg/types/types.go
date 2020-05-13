@@ -90,6 +90,7 @@ type DeviceSelectors struct {
 type NetDeviceSelectors struct {
 	DeviceSelectors
 	PfNames     []string `json:"pfNames,omitempty"`
+	VfDevices   []string `json:"vfDevices,omitempty"`
 	LinkTypes   []string `json:"linkTypes,omitempty"`
 	DDPProfiles []string `json:"ddpProfiles,omitempty"`
 	IsRdma      bool     // the resource support rdma
